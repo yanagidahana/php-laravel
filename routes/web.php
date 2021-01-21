@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('tests/index','ContactFormController@index');
+
 Route::resource('contacts','ContactFormController')->only([
     'index','show'
 ]);

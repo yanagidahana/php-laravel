@@ -15,7 +15,7 @@ class AddTitleToContactFormsTable extends Migration
     {
         Schema::table('contact_forms', function (Blueprint $table) {
             //
-//    $table->string('title',50)->after('your_name');
+    $table->string('title',50)->after('your_name');
 //    $table->dropColumn('title');
 
 
